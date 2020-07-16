@@ -1,6 +1,5 @@
 """
-Tutorial - https://numpy.org/devdocs/user/quickstart.html#
-Data types - https://numpy.org/devdocs/user/basics.types.html
+Doc - https://numpy.org/doc/
 """
 import numpy as np
 

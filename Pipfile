@@ -11,6 +11,7 @@ pandas = "*"
 jupyterlab = "*"
 voila = "*"
 jupyter = "*"
+jupyter_contrib_nbextensions = "*"
 
 [requires]
 python_version = "3.8"

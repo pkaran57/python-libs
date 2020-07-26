@@ -7,4 +7,4 @@ All pandas data structures are value-mutable (the values they contain can be alt
 columns can be inserted into a DataFrame. However, the vast majority of methods produce new objects and leave the input data untouched. In general we like to favor immutability where sensible.
 '''
 
-stocks = pandas.read_csv('data/data.csv')
+stocks = pandas.read_csv('notebook/data/data.csv')

@@ -9,12 +9,12 @@ verify_ssl = true
 numpy = "*"
 pandas = "*"
 pandas-profiling = "*"
-
 # jupyter dependencies
 jupyterlab = "*"
 voila = "*"
 jupyter = "*"
 jupyter_contrib_nbextensions = "*"
+tables = "*"
 
 [requires]
 python_version = "3.8"

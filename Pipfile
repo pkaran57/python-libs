@@ -9,6 +9,8 @@ verify_ssl = true
 numpy = "*"
 pandas = "*"
 pandas-profiling = "*"
+cx-Oracle = "*"
+
 # jupyter dependencies
 jupyterlab = "*"
 voila = "*"

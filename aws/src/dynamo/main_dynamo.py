@@ -1,18 +1,14 @@
+import logging
+
+from src.dynamo.DynamoUtil import DynamoUtil
 from src.util import SessionUtil
 
-table_name = ''
+logging.basicConfig(format="'%(asctime)s' %(name)s [%(threadName)s] : %(message)s'", level=logging.INFO)
+logging.getLogger('DynamoUtil').setLevel(logging.DEBUG)
+
 session = SessionUtil.get_session()
+dynamo_util = DynamoUtil(session)
 
-dynamo_client = session.client('dynamodb')
-dynamodb_resource = session.resource('dynamodb')
-table = dynamodb_resource.Table(table_name)
-
-
-def describe_table(table_name: str) -> None:
-    description = dynamo_client.describe_table(TableName=table_name)
-
-    for key, value in description['Table'].items():
-        print('\n{}:\n{}'.format(key, value))
-
-
-describe_table(table_name)
+items = dynamo_util.scan_for_items(TableName='',
+                                   IndexName='',
+                                   ProjectionExpression='')

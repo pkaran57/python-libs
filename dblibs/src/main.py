@@ -44,3 +44,5 @@ if __name__ == '__main__':
             text("INSERT INTO some_table (x, y) VALUES (:x, :y)"),
             [{"x": 6, "y": 8}, {"x": 9, "y": 10}]
         )
+
+    # executing an ORM session (which os equivalent to core's connection) : https://docs.sqlalchemy.org/en/14/tutorial/dbapi_transactions.html#executing-with-an-orm-session

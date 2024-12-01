@@ -7,7 +7,7 @@ logging.basicConfig(format="'%(asctime)s' %(name)s : %(message)s'", level=loggin
 logging.getLogger('sqlalchemy').setLevel(logging.DEBUG)
 logger = logging.getLogger('main')
 
-# Tutorial - https://docs.sqlalchemy.org/en/14/tutorial/index.html
+# Tutorial - https://docs.sqlalchemy.org/en/20/tutorial/index.html
 
 if __name__ == '__main__':
     logger.info('Version = {}'.format(sqlalchemy.__version__))

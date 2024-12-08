@@ -80,7 +80,8 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-.virtual_documents/
+.virtual_documents
+*.ipynb.layout
 
 # IPython
 profile_default/
